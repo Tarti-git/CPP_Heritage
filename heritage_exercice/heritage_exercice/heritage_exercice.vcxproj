@@ -148,11 +148,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="heritage_exercice.cpp" />
+    <ClCompile Include="liste.cpp" />
+    <ClCompile Include="liste_points.cpp" />
+    <ClCompile Include="point.cpp" />
     <ClCompile Include="vect.cpp" />
     <ClCompile Include="vectb.cpp" />
     <ClCompile Include="vectok.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="liste.h" />
+    <ClInclude Include="liste_points.h" />
+    <ClInclude Include="point.h" />
     <ClInclude Include="vect.h" />
     <ClInclude Include="vectb.h" />
     <ClInclude Include="vectok.h" />

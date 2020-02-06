@@ -4,6 +4,7 @@
 #include <iostream>
 #include "vectb.h"
 #include "vectok.h"
+#include "liste_points.h"
 
 int main()
 {
@@ -12,10 +13,14 @@ int main()
     vectok test3(11, 19);
     vectok test4 = test3;
     vectok test5(test4);
+    liste_points liste1;
 
     test1.adr.push_back(5); 
     test2.adr.push_back(26);
     test2.adr.push_back(2);
+
+    liste1.ajouter(point(2, 4));
+    liste1.ajouter(point(7, 0));
 
     cout << test4[0] << endl;
     cout << test4[1] << endl;
@@ -23,6 +28,8 @@ int main()
     cout << test2[2] << endl;
     cout << test2.debut() << endl;
     cout << test2.fin() << endl;
+    cout << "----------" << endl;
+    liste1.affiche();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
