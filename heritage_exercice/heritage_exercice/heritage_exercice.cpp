@@ -3,16 +3,22 @@
 
 #include <iostream>
 #include "vectb.h"
+#include "vectok.h"
 
 int main()
 {
     vect test1;
     vectb test2(10, 12);
+    vectok test3(11, 19);
+    vectok test4 = test3;
+    vectok test5(test4);
 
     test1.adr.push_back(5); 
     test2.adr.push_back(26);
     test2.adr.push_back(2);
 
+    cout << test4[0] << endl;
+    cout << test4[1] << endl;
     cout << test1[0] << endl;
     cout << test2[2] << endl;
     cout << test2.debut() << endl;
